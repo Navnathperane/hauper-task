@@ -10,6 +10,7 @@ const EditContact = ({ contacts, updateContact }) => {
     (contact) => contact.id === parseInt(id)
   );
 
+  
   useEffect(() => {
     setName(currentContact.name);
     setEmail(currentContact.email);

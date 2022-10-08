@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 const Home = ({ contacts, deleteContact }) => {
   return (
     <div className="container">
-      
       <div className="row d-flex flex-column">
         <Link to="/add" className="btn btn-outline-dark my-5 ml-auto ">
           Add New User

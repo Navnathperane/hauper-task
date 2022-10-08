@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 
+
 const Home = ({ contacts, deleteContact }) => {
   return (
     <div className="container">

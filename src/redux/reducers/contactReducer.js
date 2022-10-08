@@ -1,6 +1,6 @@
 const initialState = {user:[
   { id: 0, name: "Navnath Perane", email: "peranenavnath@gmail.com", phone: 9325836529 },
-  { id: 1, name: "Test Name", email: "test@test.com", phone: 4567891230 },
+  { id: 1, name: "Test Name", email: "test@test.com", phone: 45691230 },
 ],
 deluser:[
   { id: 0, name: "Test", email: "test55@test.com", phone: 666666666 },

@@ -11,6 +11,7 @@ import { createStore } from "redux";
 import { Provider } from "react-redux";
 import { contactReducer } from "./redux/reducers/contactReducer";
 import { composeWithDevTools } from "redux-devtools-extension";
+import Navbar from "./components/Navbar";
 
 const store = createStore(contactReducer, composeWithDevTools());
 
@@ -19,6 +20,7 @@ ReactDOM.render(
   <Provider store={store}>
     <Router>
       <App />
+      
     </Router>
   </Provider>,
   rootElement

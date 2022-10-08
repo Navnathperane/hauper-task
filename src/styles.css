@@ -1,0 +1,31 @@
+.btn-dark{    
+    background-color: blue !important;    
+}
+.btn-outline-dark{
+    background-color: blue !important;
+    color: white !important;    
+}
+.btn-outline-dark:hover{
+    background-color:white !important;
+    border-color: #343a40;
+    color:black !important;
+}
+.ml-auto, .mx-auto{
+    margin-right: 900px !important;
+}
+.mb-5, .my-5 {
+    margin-bottom: 5px !important;
+}
+.heading{
+    color: black !important;
+}
+.btn1{
+    margin: 10px;
+    color: blue !important;
+}
+
+.btnside{
+    margin-left: 310px !important;
+    
+}
+

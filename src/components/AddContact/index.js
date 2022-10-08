@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { useHistory } from "react-router";
 import { toast } from "react-toastify";
 
+
 const AddPost = ({ contacts, addContact }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -43,7 +44,7 @@ const AddPost = ({ contacts, addContact }) => {
 
   return (
     <div className="container-fluid">
-      <h1 className="text-center text-dark py-3 display-2">Add Post</h1>
+      <h1 className="text-center text-dark py-3 display-2">Add New User</h1>
       <div className="row">
         <div className="col-md-6 p-5 mx-auto shadow">
           <form onSubmit={handleSubmit}>
@@ -69,7 +70,7 @@ const AddPost = ({ contacts, addContact }) => {
               <input
                 className="form-control"
                 type="number"
-                placeholder="Phone"
+                placeholder="Mobile"
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
               />
@@ -78,7 +79,7 @@ const AddPost = ({ contacts, addContact }) => {
               <input
                 className="btn btn-block btn-dark"
                 type="submit"
-                value="Add Student"
+                value="Add User"
               />
             </div>
           </form>

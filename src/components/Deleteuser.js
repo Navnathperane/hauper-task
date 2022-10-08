@@ -1,16 +1,10 @@
 import React from "react";
 import { connect } from "react-redux";
-import { Link } from "react-router-dom";
 
-const Home = ({ contacts, deleteContact }) => {
+const Deleteuser = ({ contacts, deleteContact }) => {
   return (
     <div className="container">
-      
       <div className="row d-flex flex-column">
-        <Link to="/add" className="btn btn-outline-dark my-5 ml-auto ">
-          Add New User
-        </Link>
-        
         <div className="col-md-10 mx-auto my-4">
           <table className="table table-hover" border="1">
             <thead className="table-header  text-Black" >
@@ -31,18 +25,13 @@ const Home = ({ contacts, deleteContact }) => {
                     <td>{contact.email}</td>
                     <td>{contact.phone}</td>
                     <td>
-                      <Link
-                        to={`/edit/${contact.id}`}
-                        className="btn btn-sm btn-primary mr-1"
-                      >
-                        Edit
-                      </Link>
+                      
                       <button
                         type="button"
                         onClick={() => deleteContact(contact.id)}
                         className="btn btn-sm btn-danger"
                       >
-                        Delete
+                        Restore
                       </button>
                     </td>
                   </tr>
@@ -70,4 +59,4 @@ const mapDispatchToProps = (dispatch) => ({
   },
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(Home);
+export default connect(mapStateToProps, mapDispatchToProps)(Deleteuser);
